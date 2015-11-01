@@ -230,7 +230,7 @@
                                 <color key="textColor" red="0.68331659590000005" green="0.92842054340000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="70" y="309" width="67" height="24"/>
+                                    <rect key="frame" x="70" y="309" width="105" height="24"/>
                                 </variation>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ngc-54-DVh">
@@ -422,6 +422,15 @@
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PW0-E4-lmC">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="40" y="51" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="23K-Us-6LG" kind="show" id="PDo-Fy-gOX"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87F-ob-RDd">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -443,7 +452,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdF-Db-g6L">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="330" y="544" width="30" height="30"/>
+                                    <rect key="frame" x="312" y="544" width="61" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="snE-47-XW2" kind="show" id="Alt-t9-d6R"/>
@@ -452,49 +461,60 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enveloppe.png" translatesAutoresizingMaskIntoConstraints="NO" id="lY2-Sz-IRM">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="158" y="302" width="84" height="73"/>
+                                    <rect key="frame" x="169" y="317" width="63" height="44"/>
                                 </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yyo-8x-U5f">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="185" y="324" width="30" height="30"/>
+                                    <rect key="frame" x="175" y="324" width="52" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="1Rg-Po-RRG" kind="show" id="qcj-sP-PNV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PW0-E4-lmC">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="GXM-KE-PlN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="40" y="51" width="30" height="30"/>
+                                    <rect key="frame" x="58" y="537" width="259" height="44"/>
                                 </variation>
-                                <connections>
-                                    <segue destination="23K-Us-6LG" kind="show" id="PDo-Fy-gOX"/>
-                                </connections>
-                            </button>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or send a message instead ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PX3-wZ-KSI">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="129" y="288" width="143" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="QKI-bz-sCs"/>
+                                <exclude reference="PW0-E4-lmC"/>
                                 <exclude reference="87F-ob-RDd"/>
                                 <exclude reference="4pV-EC-9XK"/>
                                 <exclude reference="pdF-Db-g6L"/>
                                 <exclude reference="lY2-Sz-IRM"/>
                                 <exclude reference="Yyo-8x-U5f"/>
-                                <exclude reference="PW0-E4-lmC"/>
+                                <exclude reference="GXM-KE-PlN"/>
+                                <exclude reference="PX3-wZ-KSI"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="QKI-bz-sCs"/>
+                                <include reference="PW0-E4-lmC"/>
                                 <include reference="87F-ob-RDd"/>
                                 <include reference="4pV-EC-9XK"/>
                                 <include reference="pdF-Db-g6L"/>
                                 <include reference="lY2-Sz-IRM"/>
                                 <include reference="Yyo-8x-U5f"/>
-                                <include reference="PW0-E4-lmC"/>
+                                <include reference="GXM-KE-PlN"/>
+                                <include reference="PX3-wZ-KSI"/>
                             </mask>
                         </variation>
                     </view>
@@ -695,11 +715,11 @@
         <image name="profile.png" width="50" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ySM-9K-Pup"/>
-        <segue reference="Alt-t9-d6R"/>
+        <segue reference="RMh-7B-h8L"/>
+        <segue reference="PDo-Fy-gOX"/>
         <segue reference="UAg-Qt-8dp"/>
+        <segue reference="Alt-t9-d6R"/>
         <segue reference="Oal-uq-sVZ"/>
-        <segue reference="5VR-7R-G4t"/>
         <segue reference="ARz-eH-5jv"/>
     </inferredMetricsTieBreakers>
 </document>
