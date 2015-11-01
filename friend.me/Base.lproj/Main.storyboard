@@ -24,11 +24,12 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LN2-Xq-fsg">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Go!">
-                                    <color key="titleColor" red="0.6833165958992371" green="0.92842054343356784" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleColor" red="0.32489381957809194" green="0.43804422387247977" blue="1" alpha="0.55000000000000004" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="185" y="398" width="30" height="30"/>
+                                    <rect key="frame" x="192" y="333" width="30" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="Z0u-N9-vc9" kind="show" id="ySM-9K-Pup"/>
@@ -349,19 +350,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4i-rY-lho">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="tintColor" red="0.043931538439762108" green="0.078458032614703813" blue="0.54930160984848486" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Connect"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="136" y="509" width="136" height="27"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="5He-7N-yfE" kind="show" id="SUL-LJ-Uza"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sR-a4-dHy">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -384,22 +372,31 @@
                                     <segue destination="dkr-s0-QBs" kind="show" id="N1N-TJ-FrA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djv-mg-7GU">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="185" y="506" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="5He-7N-yfE" kind="show" id="dZr-zU-ebg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="MJ5-s2-4q8"/>
-                                <exclude reference="Y4i-rY-lho"/>
                                 <exclude reference="7sR-a4-dHy"/>
                                 <exclude reference="42P-h6-nl0"/>
+                                <exclude reference="djv-mg-7GU"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="MJ5-s2-4q8"/>
-                                <include reference="Y4i-rY-lho"/>
                                 <include reference="7sR-a4-dHy"/>
                                 <include reference="42P-h6-nl0"/>
+                                <include reference="djv-mg-7GU"/>
                             </mask>
                         </variation>
                     </view>
@@ -571,6 +568,18 @@
                                     <rect key="frame" x="49" y="510" width="303" height="30"/>
                                 </variation>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VD6-OP-APt">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="tintColor" red="0.68331659590000005" green="0.92842054340000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="&lt;"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="41" y="53" width="41" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="dkr-s0-QBs" kind="show" id="ARz-eH-5jv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -582,6 +591,7 @@
                                 <exclude reference="jnj-SY-hRE"/>
                                 <exclude reference="sR4-uK-Yrs"/>
                                 <exclude reference="Yd1-pp-Csp"/>
+                                <exclude reference="VD6-OP-APt"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -593,13 +603,14 @@
                                 <include reference="jnj-SY-hRE"/>
                                 <include reference="sR4-uK-Yrs"/>
                                 <include reference="Yd1-pp-Csp"/>
+                                <include reference="VD6-OP-APt"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XHC-qj-Txm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3276" y="856"/>
+            <point key="canvasLocation" x="2958" y="932"/>
         </scene>
         <!--Title-->
         <scene sceneID="BRL-cw-UNW">
@@ -684,11 +695,11 @@
         <image name="profile.png" width="50" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RMh-7B-h8L"/>
-        <segue reference="5VR-7R-G4t"/>
-        <segue reference="Oal-uq-sVZ"/>
-        <segue reference="SUL-LJ-Uza"/>
+        <segue reference="ySM-9K-Pup"/>
         <segue reference="Alt-t9-d6R"/>
-        <segue reference="N1N-TJ-FrA"/>
+        <segue reference="UAg-Qt-8dp"/>
+        <segue reference="Oal-uq-sVZ"/>
+        <segue reference="5VR-7R-G4t"/>
+        <segue reference="ARz-eH-5jv"/>
     </inferredMetricsTieBreakers>
 </document>
